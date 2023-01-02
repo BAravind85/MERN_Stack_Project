@@ -1,5 +1,6 @@
 .header{
-    height: 80px;
+    height: 60px;
+    background-color: rgb(151, 161, 244);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,4 +30,29 @@
 }
 .main{
     min-height: calc(100vh - 80px);
+}
+.footer{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.slider{
+    background-color: darkgrey;
+    display: flex;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }

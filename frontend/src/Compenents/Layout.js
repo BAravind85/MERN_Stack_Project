@@ -15,7 +15,7 @@ const Layout = (props) => {
 
       <div className="main">{props.children}</div>
       <div className="footer">
-        <p>&copy;2023.All rights reserver.Powered by FunctionUP.</p>
+        <p>&copy;2023.All rights reserver.Powered by RapidQube.</p>
       </div>
     </>
   );
