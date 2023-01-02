@@ -4,11 +4,14 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Car from './pages/Car';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer position="bottom-center" limit={1}/>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

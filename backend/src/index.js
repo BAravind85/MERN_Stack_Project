@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import carRouter from './routes/carsRoutes.js';
 import seedRouter from './routes/seedRoute.js';
+import userRouter from './routes/userRoute.js';
 
 const app = express();
  app.use(express.json());
@@ -9,6 +10,9 @@ const app = express();
 
 app.use('/api/seed/',seedRouter);
 app.use('/api/cars/',carRouter);
+
+app.use('/api/users',userRouter);
+app.use('/api/users',userRouter);
 
 mongoose.set('strictQuery', true)
 .connect("mongodb+srv://BAravind:jKC69Nt2w3H1PjN1@cluster0.fq4pskd.mongodb.net/CarBooking")

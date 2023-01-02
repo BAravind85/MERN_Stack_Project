@@ -1,12 +1,21 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import Layout from '../Compenents/Layout'
+import { userLogin } from '../redux/actions/user';
 
 const Login = () => {
+
+  const dispatch = useDispatch();
+  const onFinish =(values) => {
+    dispatch(userLogin(values));
+    console.log(values);
+  }
+
   return (
     <Layout>
       <div className='form-container'>
         <div className='form-groups'>
-          <form className='form'>
+          <form className='form' onSubmit={onFinish}>
             <h3 className='form-title'>Login</h3>
             <div className='form-group'>
             <labal htmlFor='username'>Username</labal>
