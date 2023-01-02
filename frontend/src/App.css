@@ -141,5 +141,54 @@
 }
 
 .form-groups{
-    width: 500px;
+    width: 300px;
+}
+
+.form-title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #000000;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+}
+
+.book-now{
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.form-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000
+}
+
+.form-link:hover{
+    text-decoration: underline;
+    
 }
