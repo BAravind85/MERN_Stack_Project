@@ -1,30 +1,34 @@
 import express from 'express';
 import User from '../models/userModel.js';
+import bcrypt from 'bcryptjs';
 
 const userRouter = express.Router();
 
+//for login user
 userRouter.post('/login', async (req, res) => {
-    const {username, password} = req.body;
-    try {
-        const user = await User.findOne({username, password});
-        if(user){
-            res.send(user);
-        } else {
-            return res.status(404).json(error);
+    const user=await User.findOne({username:req.body.username});
+    //if user exists
+    if(user){
+        if(bcrypt.compareSync(req.body.password,user.password)){
+            res.send({
+                _id:user._id,
+                username:user.username
+            })
+            return;
         }
-    } catch (error) {
-        return res.status(404).json(error);
     }
+    res.status(401).send({message:"Invalid Email or password"})
 });
-
+//for register user
 userRouter.post('/register', async (req, res) => {
-    const {username, password} = req.body;
-    try {
-        const newUser = new User(req.body);
-        await newUser.save();
-        res.send("User registered successfully");
-    } catch (error) {
-        return res.status(404).json(error);
-    }
+    const newUser= new User({
+        username:req.body.username,
+        password:bcrypt.hashSync(req.body.password),
+    });
+    const user=await newUser.save();
+    res.send({
+        _id:user._id,
+        username:user.username
+    })
 });
 export default userRouter;

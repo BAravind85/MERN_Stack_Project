@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Layout = (props) => {
   return (
     <>
@@ -8,7 +9,7 @@ const Layout = (props) => {
         <a href="/" className="logo">RQ</a>
         </div>
         <div className="col">
-        <span className="name">Ricpe</span>
+        <span className="name">profile</span>
         <a href="/login" className="login">Login</a>
         </div>
       </div>

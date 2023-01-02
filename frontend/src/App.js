@@ -23,5 +23,6 @@ function App() {
     </div>
   );
 }
+  // "proxy": "http://localhost:5000/"
 
 export default App;

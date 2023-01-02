@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -33,7 +33,13 @@ const Register = () => {
       dispatch({ type: "LOADING", payload: false });
     }
   };
-
+  useEffect(()=>{
+    if(localStorage.getItem('userInfo')){
+      localStorage.getItem('userInfo');
+      navigate('/');
+    }
+  
+  })
   return (
     <Layout>
       <div className="form-container">
