@@ -34,7 +34,6 @@ useEffect(()=>{
     localStorage.getItem('userInfo');
     navigate('/');
   }
-
 })
 
   return (

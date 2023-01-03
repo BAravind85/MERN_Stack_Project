@@ -15,7 +15,7 @@ app.use('/api/users',userRouter);
 app.use('/api/users',userRouter);
 
 mongoose.set('strictQuery', true)
-.connect("mongodb+srv://BAravind:jKC69Nt2w3H1PjN1@cluster0.fq4pskd.mongodb.net/CarBooking")
+.connect("mongodb+srv://BAravind:WbCbgzRS4cWKeLUL@cluster0.fq4pskd.mongodb.net/CarBooking")
 .then(()=> console.log("MongoDB connected"))
 .catch((err)=> console.log(err));
 

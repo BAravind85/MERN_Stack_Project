@@ -192,3 +192,12 @@
     text-decoration: underline;
     
 }
+.logout{
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logout:hover{
+    text-decoration:underline;
+}

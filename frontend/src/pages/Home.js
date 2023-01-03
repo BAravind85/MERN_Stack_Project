@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import Layout from "../Compenents/Layout";
 import Loading from "../Compenents/Loading";
 import { getAllCars } from "../redux/actions/actions";
 
 
 const Home = () => {
+  const navigate=useNavigate();
   const { cars } = useSelector((state) => state.reducer);
   const {loading}=useSelector((state)=>state.loading);
   console.log(cars);
@@ -14,6 +16,12 @@ const Home = () => {
   useEffect(() => {
     dispatch(getAllCars());
   }, [dispatch]);
+
+  useEffect(()=>{
+    if(!localStorage.getItem('userInfo')){
+      navigate('/login');
+    }
+  })
 
   return (
     <Layout>
@@ -51,7 +59,7 @@ const Home = () => {
                             </p>
                             </div>
                             <div className="card-footer-bottom">
-                            <button className="book-now">Book Now</button>
+                            <button className="book-now"><Link to={` /book/${car._id}`} className='book-link'>Book Now</Link></button>
                             </div>
                         </div>
                         </div>
