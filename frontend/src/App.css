@@ -123,6 +123,13 @@
     background-color: #000000;
     color: #ffffff;
 }
+.book-link{
+    color: #000000;
+    text-decoration: none;
+}
+.book-now:hover .book-link{
+   color: #ffffff;
+}
 .loading{
     display: flex;
     justify-content: center;
@@ -200,4 +207,56 @@
 }
 .logout:hover{
     text-decoration:underline;
+}
+.car-booktitle{
+    text-align: center;
+    margin: 100px 0 100px 0;
+    font-size: 40px;
+}
+.car-row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-col{
+    flex:1;
+    margin-bottom: 100px;
+}
+
+.car-group{
+    margin-bottom: 25px;  
+   
+}
+.car-subtitle{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #b5acac;
+}
+.car-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car-info span {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.car-image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.car-img{
+    width: 600px;
+    height:auto ;
+    filter: drop-shadow(0 0 5px #5f6061);
+}
+
+.avail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

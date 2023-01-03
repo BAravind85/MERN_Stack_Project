@@ -5,7 +5,12 @@ const carsSchema = new mongoose.Schema({
     image: {type: String, required: true},
     price: {type: Number, required: true},
     fuelType: {type: String, required: true},
-    bookedTimeSlots: {type: [String], default: []},
+    bookedTimeSlots: [
+        {
+            from: {type: String, required: true},
+            to: {type: String, required: true}
+        }
+    ],
     capacity: {type: Number, required: true},
 },{
     timestamps: true

@@ -59,7 +59,7 @@ const Home = () => {
                             </p>
                             </div>
                             <div className="card-footer-bottom">
-                            <button className="book-now"><Link to={` /book/${car._id}`} className='book-link'>Book Now</Link></button>
+                            <button className="book-now"><Link to={`/car/${car._id}`} className='book-link'>Book Now</Link></button>
                             </div>
                         </div>
                         </div>
