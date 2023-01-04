@@ -31,7 +31,7 @@ const Car = () => {
   }, [carId, navigate]);
   const handleClick=(e)=>{
     toast.success("Thanks for your conformation!");
-    navigate('/conformation')
+    navigate('/')
   }
 
   const handleState = (e) => {
