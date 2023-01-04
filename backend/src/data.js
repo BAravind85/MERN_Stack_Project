@@ -1,63 +1,63 @@
 const data = {
     cars: [
         {
-            name: "Fortuner",
+            name: "Tata Bolt",
             type: "SUV",
-            image: "/images/cars/Fortuner.png",
+            image: "/images/cars/bolt.png",
             price: 55,
             fuelType: "Petrol",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "Etios",
+            name: "Tata Hexa",
             type: "Seden",
-            image: "/images/cars/Etios.png",
+            image: "/images/cars/hexa.png",
             price: 30,
             fuelType: "Petrol",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "ScorpioN",
+            name: "Tata Nexon",
             type: "SUV",
-            image: "/images/cars/ScorpioN.png",
+            image: "/images/cars/nexon.png",
             price: 52,
             fuelType: "Diesel",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "Sportage",
-            type: "Mini SUV",
-            image: "/images/cars/Sportage.png",
+            name: "Tata Sumo",
+            type: "SUV",
+            image: "/images/cars/sumo.png",
             price: 47,
             fuelType: "Diesel",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "Swift",
+            name: "Tata xenon",
             type: "Mini SUV",
-            image: "/images/cars/Swift.png",
+            image: "/images/cars/xenon.png",
             price: 30,
             fuelType: "Petrol",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "XC90",
+            name: "Tata zest",
             type: "SUV",
-            image: "/images/cars/XC90.png",
+            image: "/images/cars/zest.png",
             price: 42,
             fuelType: "Diesel",
             bookedTimeSlots: [],
             capacity: 5
         },
         {
-            name: "XUV 500",
+            name: "Tiago",
             type: "SUV",
-            image: "/images/cars/XUV500.png",
+            image: "/images/cars/tiago.png",
             price: 50,
             fuelType: "Diesel",
             bookedTimeSlots: [],

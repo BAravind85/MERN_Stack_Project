@@ -257,6 +257,13 @@
 
 .avail{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.form-control{
+ display:flex;
+ margin:  5px;
+
+}
+.btn{
+    margin-top: 30px;
 }
